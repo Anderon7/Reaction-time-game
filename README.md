@@ -1,56 +1,47 @@
-# Reaction-time-game
-from pitop import Pitop, Button, LED, SoundSensor, LightSensor, UltrasonicSensor
+from pitop import Pitop, Button, LED
 from time import sleep
-
+import random
+import time
+x = True
+y = True
+z = True
 pitop = Pitop()
 screen = pitop.miniscreen
 led_red = LED("D0")
 led_green = LED("D1")
 btn = Button("D2")
-sound_sensor = SoundSensor("D3")
-dist_sensor = UltrasonicSensor("A0")
-light_sensor = LightSensor("A1")
 
-# start in the idle state
 toggle_active = False
-screen.display_text("IDLE")
+screen.display_text("Click button to begin")
 while not screen.cancel_button.is_pressed:
-    #system, is not active and button has been pressed
     if btn.is_pressed:
-        # change states
-        screen.display_text("ACTIVE")
-        led_green.on()
+        screen.display_text("Click when green")
+        led_red.on()
         sleep(.5)
         toggle_active = True
-
-
+    num = 0
     if toggle_active:
-        light = light_sensor.reading
-        distance = dist_sensor.distance
-        sound = sound_sensor
+        num = random.randint(1,10)
 
-        if distance < .2 or light < 30:
-            led_red.on()
-            led_green.off()
-            screen.display_text("ALARM")
-        else:
-            screen.display_text("ACTIVE")
-            led_red.off()
+        while x:
+            print(num)
+            sleep(0.5)
+            while num != 0:
+                if btn.is_pressed:
+                    screen.display_text("Too fast")
+                num -= 1
+                if num == 1:
+                    x = False
         sleep(.5)
-max = 70
-baby = False
-if baby:
-    max = max/2
 
-while not screen.cancel_button.is_pressed:
+        led_green.on()
+        start_time = time.time()
 
-    s = sound_sensor.reading
-    if s > max:
-        led_red.on()
-        led_green.off()
-        screen.display_text("ALARM")
-    else:
-        screen.display_text("ACTIVE")
-        led_red.off()
-
-    sleep(.1)
+        while y:
+            if btn.is_pressed:
+                led_red.off()
+                end_time = time.time()
+                elapsed_time = (end_time - start_time)
+                screen.display_text(f"Elapsed time: {elapsed_time:.2f} seconds")
+                y = False
+                sleep(.5)
