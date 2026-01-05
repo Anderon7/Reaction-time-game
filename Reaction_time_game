@@ -13,8 +13,7 @@ btn = Button("D2")
 
 toggle_active = False
 screen.display_text("Click button to begin")
-def abd():
-    while not screen.cancel_button.is_pressed:
+while not screen.cancel_button.is_pressed:
     if btn.is_pressed:
         screen.display_text("Click when green")
         led_red.on()
@@ -45,7 +44,3 @@ def abd():
                 screen.display_text(f"Elapsed time: {elapsed_time:.2f} seconds")
                 y = False
                 sleep(.5)
-                
-    
-    if btn.is_pressed:
-        abd()
