@@ -19,7 +19,6 @@ while not screen.cancel_button.is_pressed:
         led_red.on()
         sleep(.5)
         toggle_active = True
-    num = 0
     if toggle_active:
         num = random.randint(1,10)
 
