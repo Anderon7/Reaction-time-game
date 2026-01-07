@@ -29,7 +29,7 @@ while not screen.cancel_button.is_pressed:
             if btn.is_pressed:
                 screen.display_text("Too fast")
             num -= 1
-            if num == 1:
+            if num == 0:
                 y = True
         sleep(.5)
         led_green.on()
@@ -43,7 +43,10 @@ while not screen.cancel_button.is_pressed:
     while x and y and z:
         screen.display_text(f"Elapsed time: {elapsed_time:.2f} seconds")
         sleep(.5)
+        
         if btn.is_pressed:
+            screen.display_text("Click to Play Again")
             x = False
             y = False
             z = False
+            sleep(.5)
