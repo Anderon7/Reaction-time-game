@@ -22,12 +22,16 @@ while not screen.cancel_button.is_pressed:
         screen.display_text("Click when green")
         led_red.on()
         sleep(.5)
-        num = random.randint(1,10)
+        num = random.randint(1,7)
         print(num)
         sleep(0.5)
         while num != 0:
             if btn.is_pressed:
                 screen.display_text("Too fast")
+                x = False
+                y = False
+                z = False
+                sleep(.5)
             num -= 1
             if num == 0:
                 y = True
@@ -41,9 +45,9 @@ while not screen.cancel_button.is_pressed:
             elapsed_time = (end_time - start_time)
             z = True
     while x and y and z:
-        screen.display_text(f"Elapsed time: {elapsed_time:.2f} seconds")
+        screen.display_text(f"Elapsed time: {elapsed_time:.3f} seconds")
         sleep(.5)
-        
+
         if btn.is_pressed:
             screen.display_text("Click to Play Again")
             x = False
