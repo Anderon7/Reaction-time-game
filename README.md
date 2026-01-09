@@ -35,9 +35,6 @@ Diagram:
 5. When button is pressed, stop timer.
 6. Go back to start for another round.
 Anti-cheat demonstration:
-https://github.com/user-
-
-https://github.com/user-attachments/assets/7183b3e0-515a-4ea0-b57a-f83161afbc71
-
-attachments/assets/5fddb753-a526-4049-ae28-0ac9276187c8
+https://github.com/user-attachments/assets/5fddb753-a526-4049-ae28-0ac9276187c8
 Game demonstration:
+https://github.com/user-attachments/assets/7183b3e0-515a-4ea0-b57a-f83161afbc71
