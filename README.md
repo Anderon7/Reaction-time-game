@@ -61,6 +61,8 @@ Week 4: Implement reaction gameplay and timing
 Week 5: Add a second mode and potentiometer difficulty
 
 Week 6: Final testing, peer feedback, and GitHub
+#### Digital Notebook:
+https://docs.google.com/document/d/198cdwTzczsJMcULxXucRGlK4ySAQx6klCQTJsULBfRc/edit?usp=sharing
 
 ### Final Desgin (Updated)
 1. Game starts with "Click to Begin"
@@ -70,3 +72,9 @@ Week 6: Final testing, peer feedback, and GitHub
 5. Three button presses: return to the start up screen, displaying "Click to Play Again"
 This design allows for repeated practice and prevents early-click cheating, making it effective for training.
 
+### Skills Demonstrated
+- Demonstrated knowledge of Python programming by using a pi-top to read button inputs, control LEDs, and measure reaction time using timers.
+- Demonstrated the ability to design State Machines to manage game flow, screen display, and user interactions.
+- Demonstrated problem solving-skills by implementing anti-cheat logic that detects early button presses or spam, ensuring accurate reaction-time measurements.
+- Demonstrated the ability to debug and improve code to increase reliability and user interactions.
+- Demonstrated an understanding of the engineering design process and principles through testing and refinement.
