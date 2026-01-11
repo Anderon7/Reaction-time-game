@@ -48,6 +48,8 @@ while not screen.cancel_button.is_pressed:    # Loop until button is pressed
                 y = True    # Green LED will turn on
         sleep(.5)
         led_green.on()    # Signal for player to react to
+        # Stopwatch Logic implemented from Raspberry Pi Forums:
+        # https://forums.raspberrypi.com/viewtopic.php?t=28102#p249397
         start_time = time.time()    # Start stop watch
     while x and y and z == False:    # Waiting for button press after green LED
         if btn.is_pressed:
