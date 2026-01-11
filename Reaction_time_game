@@ -1,55 +1,68 @@
+# Import modules from pitop
 from pitop import Pitop, Button, LED
 from time import sleep
 import random
 import time
+
+# Game state variables
 x = False
 y = False
 z = False
+
+# Pitop hardware and ports
 pitop = Pitop()
-screen = pitop.miniscreen
-led_red = LED("D0")
-led_green = LED("D1")
-btn = Button("D2")
+screen = pitop.miniscreen    # Mini screen for displaying messages
+led_red = LED("D0")    # Red LED for countdown
+led_green = LED("D1")    # Green LED for reaction signal/visual stimulus
+btn = Button("D2")    # Button for user input
 
-
+# Display initial start message when code is run
 screen.display_text("Click button to begin")
-while not screen.cancel_button.is_pressed:
+# Main game loop
+while not screen.cancel_button.is_pressed:    # Loop until button is pressed
     while x == False and y == False and z == False:
+        # Turn off both LEDs while waiting
         led_green.off() and led_red.off()
-        if btn.is_pressed:
-            x = True
-    while x and y == False and z == False:
-        screen.display_text("Click when green")
-        led_red.on()
-        sleep(.5)
+        if btn.is_pressed:    # Checks if the button is pressed to start the game
+            x = True    # Game has started
+    while x and y == False and z == False:    # Waiting for green LED state
+        screen.display_text("Click when green")    # Screen display to prompt the player
+        led_red.on()    # Turn on red LED to indicate countdown
+        sleep(.5)    # Short pause before random delay
+
+        # Generate a random delay before the green LED turns on (1/7 chance to input correct number)
         num = random.randint(1,7)
-        print(num)
+        print(num)    # Displays on the computer to view any bugs
         sleep(0.5)
+        # Countdown loop before green LED
         while num != 0:
+            # Anti-cheat, where it states if the button is pressed before green, display "Too Fast" and pause the game
             if btn.is_pressed:
-                screen.display_text("Too fast")
+                screen.display_text("Too fast")    # Feedback for early click
                 x = False
                 y = False
                 z = False
                 sleep(.5)
-            num -= 1
+            num -= 1    # If the random number is 1, then it initiates the next step
             if num == 0:
-                y = True
+                y = True    # Green LED will turn on
         sleep(.5)
-        led_green.on()
-        start_time = time.time()
-    while x and y and z == False:
+        led_green.on()    # Signal for player to react to
+        start_time = time.time()    # Start stop watch
+    while x and y and z == False:    # Waiting for button press after green LED
         if btn.is_pressed:
-            led_red.off()
-            end_time = time.time()
-            elapsed_time = (end_time - start_time)
-            z = True
+            led_red.off()    # signifys the end of countdown
+            end_time = time.time()    # Stop timer
+            elapsed_time = (end_time - start_time)    # Calculate rection time
+            z = True    # Round is finished
+    # Display game results and wait for the user to reset
     while x and y and z:
-        screen.display_text(f"Elapsed time: {elapsed_time:.3f} seconds")
+        screen.display_text(f"Elapsed time: {elapsed_time:.3f} seconds")    # Displays reaction time on screen
         sleep(.5)
-
+        # Reset state: press three times to return to start
         if btn.is_pressed:
-            screen.display_text("Click to Play Again")
+            screen.display_text("Click to Play Again")    # After clicking three times, the  screen displays, "Click to Play Again"
+            # the correct states to return to start
             x = False
             y = False
             z = False
