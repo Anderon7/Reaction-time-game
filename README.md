@@ -72,6 +72,9 @@ https://docs.google.com/document/d/198cdwTzczsJMcULxXucRGlK4ySAQx6klCQTJsULBfRc/
 5. Three button presses: return to the start up screen, displaying "Click to Play Again"
 This design allows for repeated practice and prevents early-click cheating, making it effective for training.
 
+### Sources:
+- Raspberry Pi Forums: https://forums.raspberrypi.com/viewtopic.php?t=28102#p249397 (For the stopwatch)
+
 ### Skills Demonstrated
 - Demonstrated knowledge of Python programming by using a pi-top to read button inputs, control LEDs, and measure reaction time using timers.
 - Demonstrated the ability to design State Machines to manage game flow, screen display, and user interactions.
