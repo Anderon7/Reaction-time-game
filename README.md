@@ -38,7 +38,7 @@ After comparing the options, I chose Idea A because it focuses on improving reac
 #### State Machine:
 ![IMG_8169](https://github.com/user-attachments/assets/34a212b3-a0bc-4387-b13b-27990498deba)
 #### Block Diagram:
-
+<img width="1658" height="523" alt="image" src="https://github.com/user-attachments/assets/a079af80-0d1d-435e-b5bb-69da8339a5f6" />
 
 ### Develop a Solution
 #### Materials Planned:
