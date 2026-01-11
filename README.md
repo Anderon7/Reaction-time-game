@@ -81,3 +81,6 @@ This design allows for repeated practice and prevents early-click cheating, maki
 - Demonstrated problem solving-skills by implementing anti-cheat logic that detects early button presses or spam, ensuring accurate reaction-time measurements.
 - Demonstrated the ability to debug and improve code to increase reliability and user interactions.
 - Demonstrated an understanding of the engineering design process and principles through testing and refinement.
+
+### Reflection
+This project taught me how to use the engineering design process to deal with a real-world problem, improving reaction time. I learned to plan, test, and fix the game, using Python coding and hardware. Adding in the anti-cheat logic and randomized timing has strengthened my problem-solving skills. Overall, this project has helped me strengthen my coding, problem solving, and iteration skills.
