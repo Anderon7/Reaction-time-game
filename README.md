@@ -34,6 +34,7 @@ Diagram:
 4. Turn on green light and start timer.
 5. When button is pressed, stop timer.
 6. Go back to start for another round.
+
 Anti-cheat demonstration:
 https://github.com/user-attachments/assets/5fddb753-a526-4049-ae28-0ac9276187c8
 Game demonstration:
