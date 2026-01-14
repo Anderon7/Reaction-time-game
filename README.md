@@ -73,7 +73,8 @@ https://docs.google.com/document/d/198cdwTzczsJMcULxXucRGlK4ySAQx6klCQTJsULBfRc/
 This design allows for repeated practice and prevents early-click cheating, making it effective for training.
 
 #### Working game:
-![IMG_8208](https://github.com/user-attachments/assets/a13d5043-6c38-42e9-8255-a64adde90378)
+
+(https://github.com/user-attachments/assets/7183b3e0-515a-4ea0-b57a-f83161afbc71)
 
 #### Anti-cheat
 
