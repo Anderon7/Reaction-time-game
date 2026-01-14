@@ -72,6 +72,14 @@ https://docs.google.com/document/d/198cdwTzczsJMcULxXucRGlK4ySAQx6klCQTJsULBfRc/
 5. Three button presses: return to the start up screen, displaying "Click to Play Again"
 This design allows for repeated practice and prevents early-click cheating, making it effective for training.
 
+#### Working game:
+![IMG_8208](https://github.com/user-attachments/assets/a13d5043-6c38-42e9-8255-a64adde90378)
+
+#### Anti-cheat
+
+
+https://github.com/user-attachments/assets/12239fd0-cb6b-4522-a0c1-5b29a16a4ce1
+
 ### Sources:
 - Raspberry Pi Forums: https://forums.raspberrypi.com/viewtopic.php?t=28102#p249397 (For the stopwatch)
 
