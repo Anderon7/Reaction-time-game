@@ -74,7 +74,7 @@ This design allows for repeated practice and prevents early-click cheating, maki
 
 #### Working game:
 
-(https://github.com/user-attachments/assets/7183b3e0-515a-4ea0-b57a-f83161afbc71)
+https://github.com/user-attachments/assets/7183b3e0-515a-4ea0-b57a-f83161afbc71
 
 #### Anti-cheat
 
