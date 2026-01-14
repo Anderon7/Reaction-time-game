@@ -64,7 +64,7 @@ Week 6: Final testing, peer feedback, and GitHub
 #### Digital Notebook:
 https://docs.google.com/document/d/198cdwTzczsJMcULxXucRGlK4ySAQx6klCQTJsULBfRc/edit?usp=sharing
 
-### Final Desgin (Updated)
+### Final Design (Updated)
 1. Game starts with "Click to Begin"
 2. Screen displays "Click when Green"
 3. If the button is pressed before green: "Too Fast"
@@ -72,11 +72,11 @@ https://docs.google.com/document/d/198cdwTzczsJMcULxXucRGlK4ySAQx6klCQTJsULBfRc/
 5. Three button presses: return to the start up screen, displaying "Click to Play Again"
 This design allows for repeated practice and prevents early-click cheating, making it effective for training.
 
-#### Working game:
+#### Working game demonstration:
 
 https://github.com/user-attachments/assets/7183b3e0-515a-4ea0-b57a-f83161afbc71
 
-#### Anti-cheat
+#### Anti-cheat demonstration:
 
 
 https://github.com/user-attachments/assets/12239fd0-cb6b-4522-a0c1-5b29a16a4ce1
